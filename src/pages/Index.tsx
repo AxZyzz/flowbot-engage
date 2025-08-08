@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import ServiceShowcase from "@/components/ServiceShowcase";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
 
       <main className="container mx-auto space-y-20 pb-20">
         <Hero />
+        <ServiceShowcase />
 
         <section id="features" className="mx-auto max-w-5xl">
           <h2 className="mb-4 text-center text-3xl font-bold">Why teams choose Flowbot</h2>
