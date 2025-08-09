@@ -7,14 +7,14 @@ import CoreServices from "@/components/CoreServices";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background page-chrome">
       <header className="container mx-auto flex items-center justify-between py-6">
         <a href="/" className="text-lg font-semibold tracking-tight">
           Lowcode
         </a>
         <nav className="hidden gap-6 md:flex" aria-label="Main navigation">
-          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#core-services">Features</a>
-          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#pricing">Pricing</a>
+          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/features">Features</a>
+          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/pricing">Pricing</a>
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#contact">Contact</a>
         </nav>
         <div className="flex items-center gap-3">
@@ -31,11 +31,11 @@ const Index = () => {
         <Reveal>
           <section id="features" className="mx-auto max-w-5xl">
           <h2 className="mb-4 text-center text-3xl font-bold">Why teams choose Lowcode</h2>
-          <p className="mx-auto mb-10 max-w-2xl text-center text-muted-foreground">A single platform to automate calls, chats, and web conversions with high‑quality AI and seamless integrations.</p>
+          <p className="mx-auto mb-10 max-w-2xl text-center text-muted-foreground">A SaaS platform to automate calls, chats, and conversions with production‑ready AI and seamless integrations.</p>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {["No-code bot builder","CRM & Calendar Integrations","Analytics & Inbox"].map((t,i)=> (
-              <div key={i} className="glass rounded-xl p-6">
+              <div key={i} className="feature-card card-hover rounded-xl p-6">
                 <div className="mb-3 inline-flex size-8 items-center justify-center rounded-md bg-primary/10 text-primary"><Check/></div>
                 <h3 className="font-semibold">{t}</h3>
                 <p className="text-sm text-muted-foreground">Everything you need to launch fast and scale confidently.</p>
@@ -48,8 +48,8 @@ const Index = () => {
         <Reveal>
           <section id="pricing" className="mx-auto max-w-4xl">
           <article className="glass rounded-2xl p-8 text-center">
-            <h2 className="text-3xl font-bold">Simple, transparent pricing</h2>
-            <p className="mt-2 text-muted-foreground">Pay as you grow. Flexible add‑ons for voice minutes, WhatsApp sessions, and team seats.</p>
+            <h2 className="text-3xl font-bold">SaaS pricing that scales</h2>
+            <p className="mt-2 text-muted-foreground">Pay as you grow with flexible add‑ons for voice minutes, WhatsApp sessions, and team seats.</p>
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button variant="premium" size="lg" className="hover-lift">Start Free</Button>
               <Button variant="hero" size="lg" className="hover-lift">Talk to Sales</Button>

@@ -109,6 +109,7 @@ All colors MUST be HSL.
 }
 
 @layer base {
+  html { scroll-behavior: smooth; }
   * {
     @apply border-border;
   }
@@ -155,4 +156,26 @@ All colors MUST be HSL.
     transition: transform 300ms ease;
   }
   .story-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+  /* Subtle brand-colored page border glow */
+  .page-chrome {
+    box-shadow: 0 0 0 1px hsl(var(--brand) / 0.12) inset, 0 20px 60px -20px hsl(var(--brand) / 0.25);
+    border-radius: 0.75rem;
+  }
+
+  /* White card look that remains consistent on colored backgrounds */
+  .feature-card {
+    background-color: hsl(var(--card));
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-elevate);
+  }
+
+  .card-hover {
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background-color 220ms ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px -20px hsl(var(--brand) / 0.55), var(--shadow-elevate);
+    border-color: hsl(var(--brand) / 0.35);
+  }
 }

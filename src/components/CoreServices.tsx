@@ -9,7 +9,7 @@ import telegram from "@/assets/telegram-bot.jpg";
 
 const Bullet: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <li className="flex items-start gap-2 text-sm text-muted-foreground">
-    <span className="mt-0.5 inline-flex size-5 items-center justify-center rounded-md bg-primary/10 text-primary"><Check size={14} /></span>
+    <span className="mt-0.5 inline-flex size-5 items-center justify-center rounded-full bg-primary/10 text-primary"><Check size={14} /></span>
     <span>{children}</span>
   </li>
 );
@@ -18,7 +18,7 @@ const CoreServices: React.FC = () => {
   const services = [
     {
       title: "AI Call Bots",
-      image: aiCall,
+      image: "/call-bot.gif",
       bullets: [
         "Automated appointment booking",
         "Feedback and survey calls",
@@ -30,7 +30,7 @@ const CoreServices: React.FC = () => {
     },
     {
       title: "WhatsApp Chatbots",
-      image: whatsapp,
+      image: "/ai-bot.jpg",
       bullets: [
         "24/7 customer support",
         "Lead gen & qualification",
@@ -81,14 +81,14 @@ const CoreServices: React.FC = () => {
   return (
     <section id="core-services" aria-label="Core services" className="mx-auto max-w-6xl space-y-10">
       <header className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight">Core Services</h2>
-        <p className="mt-2 text-muted-foreground">Lowcode delivers high-impact automation and IT consulting with real results.</p>
+        <h2 className="text-3xl font-bold tracking-tight">Core Capabilities</h2>
+        <p className="mt-2 text-muted-foreground">Lowcode is a SaaS platform delivering high‑impact automation with real results.</p>
       </header>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {services.map((s, i) => (
           <Reveal key={s.title}>
-            <article className="glass rounded-2xl overflow-hidden">
+            <article className="glass card-hover rounded-2xl overflow-hidden">
               <figure className="p-3">
                 <img
                   src={s.image}

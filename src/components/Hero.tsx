@@ -11,14 +11,14 @@ const Hero: React.FC = () => {
       <div className="relative z-10 mx-auto max-w-5xl text-center">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs glass">
           <Sparkles className="opacity-80" />
-          <span>IT Consulting • AI Bots • Automation</span>
+          <span>SaaS Platform • AI Bots • Automation</span>
         </div>
 
         <h1 className="mt-6 text-5xl font-bold tracking-tight text-gradient md:text-6xl lg:text-7xl font-display">
-          Lowcode — Smart Automation for the Modern Business
+          Lowcode — AI Automation SaaS for Modern Teams
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-          Lowcode is an IT consulting company delivering AI Call Bots, WhatsApp & Website Chatbots, and custom web design to help you save time, boost conversions, and scale effortlessly.
+          Lowcode is a cloud platform for AI Call Bots and Chatbots across WhatsApp and Web. Launch workflows in minutes, integrate with your stack, and scale effortlessly.
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -31,27 +31,27 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Feature icons */}
-        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <article className="glass rounded-xl p-5 text-left">
-            <div className="mb-3 inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <article className="feature-card card-hover rounded-xl p-6 text-left">
+            <div className="mb-3 inline-flex size-8 items-center justify-center rounded-md bg-primary/10 text-primary">
               <PhoneCall />
             </div>
             <h3 className="font-semibold">AI Call Bots</h3>
-            <p className="text-sm text-muted-foreground">Auto-book appointments, reminders, and feedback calls with natural voice.</p>
+            <p className="text-sm text-muted-foreground">Everything you need to launch fast and scale confidently.</p>
           </article>
-          <article className="glass rounded-xl p-5 text-left">
-            <div className="mb-3 inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+          <article className="feature-card card-hover rounded-xl p-6 text-left">
+            <div className="mb-3 inline-flex size-8 items-center justify-center rounded-md bg-primary/10 text-primary">
               <MessageSquare />
             </div>
             <h3 className="font-semibold">WhatsApp Chatbots</h3>
-            <p className="text-sm text-muted-foreground">24/7 support, lead capture, and marketing workflows integrated with your CRM.</p>
+            <p className="text-sm text-muted-foreground">Everything you need to launch fast and scale confidently.</p>
           </article>
-          <article className="glass rounded-xl p-5 text-left">
-            <div className="mb-3 inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+          <article className="feature-card card-hover rounded-xl p-6 text-left">
+            <div className="mb-3 inline-flex size-8 items-center justify-center rounded-md bg-primary/10 text-primary">
               <Bot />
             </div>
             <h3 className="font-semibold">Website Chatbots</h3>
-            <p className="text-sm text-muted-foreground">Turn visitors into customers using smart site bots and tailored funnels.</p>
+            <p className="text-sm text-muted-foreground">Everything you need to launch fast and scale confidently.</p>
           </article>
         </div>
       </div>
