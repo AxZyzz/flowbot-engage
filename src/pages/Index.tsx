@@ -2,16 +2,18 @@ import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import ServiceShowcase from "@/components/ServiceShowcase";
+import Reveal from "@/components/Reveal";
+import CoreServices from "@/components/CoreServices";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <header className="container mx-auto flex items-center justify-between py-6">
         <a href="/" className="text-lg font-semibold tracking-tight">
-          Flowbot <span className="text-primary">Engage</span>
+          Lowcode
         </a>
         <nav className="hidden gap-6 md:flex" aria-label="Main navigation">
-          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#features">Features</a>
+          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#core-services">Features</a>
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#pricing">Pricing</a>
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#contact">Contact</a>
         </nav>
@@ -24,9 +26,11 @@ const Index = () => {
       <main className="container mx-auto space-y-20 pb-20">
         <Hero />
         <ServiceShowcase />
+        <CoreServices />
 
-        <section id="features" className="mx-auto max-w-5xl">
-          <h2 className="mb-4 text-center text-3xl font-bold">Why teams choose Flowbot</h2>
+        <Reveal>
+          <section id="features" className="mx-auto max-w-5xl">
+          <h2 className="mb-4 text-center text-3xl font-bold">Why teams choose Lowcode</h2>
           <p className="mx-auto mb-10 max-w-2xl text-center text-muted-foreground">A single platform to automate calls, chats, and web conversions with high‑quality AI and seamless integrations.</p>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -39,8 +43,10 @@ const Index = () => {
             ))}
           </div>
         </section>
+        </Reveal>
 
-        <section id="pricing" className="mx-auto max-w-4xl">
+        <Reveal>
+          <section id="pricing" className="mx-auto max-w-4xl">
           <article className="glass rounded-2xl p-8 text-center">
             <h2 className="text-3xl font-bold">Simple, transparent pricing</h2>
             <p className="mt-2 text-muted-foreground">Pay as you grow. Flexible add‑ons for voice minutes, WhatsApp sessions, and team seats.</p>
@@ -50,11 +56,12 @@ const Index = () => {
             </div>
           </article>
         </section>
+        </Reveal>
       </main>
 
       <footer id="contact" className="border-t">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-10 md:flex-row">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Flowbot Engage</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Lowcode</p>
           <nav className="flex gap-6 text-sm text-muted-foreground" aria-label="Footer navigation">
             <a href="#" className="hover:text-foreground">Privacy</a>
             <a href="#" className="hover:text-foreground">Terms</a>

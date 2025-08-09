@@ -11,14 +11,14 @@ const Hero: React.FC = () => {
       <div className="relative z-10 mx-auto max-w-5xl text-center">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs glass">
           <Sparkles className="opacity-80" />
-          <span>AI Automations for Calls, WhatsApp & Web</span>
+          <span>IT Consulting • AI Bots • Automation</span>
         </div>
 
         <h1 className="mt-6 text-5xl font-bold tracking-tight text-gradient md:text-6xl lg:text-7xl font-display">
-          GenAI Customer Engagement
+          Lowcode — Smart Automation for the Modern Business
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-          Convert more visitors, book appointments automatically, and support customers 24/7 with AI Call Bots, WhatsApp Chatbots, and Website Assistants.
+          Lowcode is an IT consulting company delivering AI Call Bots, WhatsApp & Website Chatbots, and custom web design to help you save time, boost conversions, and scale effortlessly.
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -50,11 +50,13 @@ const Hero: React.FC = () => {
             <div className="mb-3 inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
               <Bot />
             </div>
-            <h3 className="font-semibold">Website Assistants</h3>
+            <h3 className="font-semibold">Website Chatbots</h3>
             <p className="text-sm text-muted-foreground">Turn visitors into customers using smart site bots and tailored funnels.</p>
           </article>
         </div>
       </div>
+      {/* Soft fade to white/background */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-background" />
     </section>
   );
 };
