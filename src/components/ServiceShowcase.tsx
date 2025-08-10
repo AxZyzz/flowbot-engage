@@ -1,6 +1,5 @@
 import React from "react";
 import { Check } from "lucide-react";
-import whatsappImage from "@/assets/whatsapp-showcase.jpg";
 import flowDiagram from "@/assets/flow-diagram.jpg";
 import Reveal from "@/components/Reveal";
 
@@ -13,22 +12,22 @@ const ServiceShowcase: React.FC = () => {
     <section id="solutions" aria-label="Solutions" className="mx-auto max-w-6xl space-y-24">
       {/* WhatsApp engagement */}
       <Reveal>
-        <article className="grid items-center gap-10 md:grid-cols-2 card-hover">
-          <div>
+        <article className="feature-card rounded-2xl p-6 md:p-8 grid items-center gap-8 md:gap-12 md:grid-cols-2 card-hover sweep-glow-left overflow-hidden">
+          <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tight">Engage customers on WhatsApp</h2>
-            <p className="mt-3 text-muted-foreground leading-relaxed">Broadcast campaigns, trigger smart replies, and handle support automatically while your team focuses on growth.</p>
-            <ul className="mt-6 space-y-2">
+            <p className="text-muted-foreground leading-relaxed">Broadcast campaigns, trigger smart replies, and handle support automatically while your team focuses on growth.</p>
+            <ul className="space-y-2">
               <Bullet>98% open rates with rich messages</Bullet>
               <Bullet>Quick replies and payment-enabled flows</Bullet>
               <Bullet>CRM logging for every conversation</Bullet>
             </ul>
           </div>
-          <figure className="glass rounded-2xl p-3 card-hover">
+          <figure className="flex items-center justify-center">
             <img
-              src={whatsappImage}
-              alt="Realistic WhatsApp chatbot showcasing quick reply options and rich messages"
+              src="/ui.png"
+              alt="WhatsApp chatbot UI"
               loading="lazy"
-              className="w-full rounded-xl shadow"
+              className="w-full max-w-[640px]"
             />
           </figure>
         </article>
@@ -36,7 +35,7 @@ const ServiceShowcase: React.FC = () => {
 
       {/* Visual flow builder */}
       <Reveal>
-        <article className="grid items-center gap-10 md:grid-cols-2 card-hover">
+        <article className="feature-card rounded-2xl p-6 md:p-8 grid items-center gap-8 md:gap-12 md:grid-cols-2 card-hover sweep-glow-right overflow-hidden">
           <figure className="order-last glass rounded-2xl p-3 md:order-first card-hover">
             <img
               src={flowDiagram}
