@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import ServiceShowcase from "@/components/ServiceShowcase";
 import Reveal from "@/components/Reveal";
-import CoreServices from "@/components/CoreServices";
 
 const Index = () => {
   return (
@@ -15,6 +14,7 @@ const Index = () => {
         <nav className="hidden gap-6 md:flex" aria-label="Main navigation">
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/features">Features</a>
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/pricing">Pricing</a>
+          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/about">About</a>
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="#contact">Contact</a>
         </nav>
         <div className="flex items-center gap-3">
@@ -26,7 +26,6 @@ const Index = () => {
       <main className="container mx-auto space-y-20 pb-20">
         <Hero />
         <ServiceShowcase />
-        <CoreServices />
 
         <Reveal>
           <section id="features" className="mx-auto max-w-5xl">

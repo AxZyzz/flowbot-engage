@@ -7,9 +7,12 @@ interface RevealProps {
   as?: keyof JSX.IntrinsicElements;
 }
 
+let revealInstanceCounter = 0;
+
 const Reveal: React.FC<RevealProps> = ({ className, children, as: Tag = "div" as any }) => {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
+  const [instanceIndex] = useState(() => revealInstanceCounter++);
 
   useEffect(() => {
     const el = ref.current;
@@ -31,12 +34,18 @@ const Reveal: React.FC<RevealProps> = ({ className, children, as: Tag = "div" as
     return () => io.disconnect();
   }, []);
 
+  const comingFromLeft = instanceIndex % 2 === 0;
+
   return (
     <Tag
       ref={ref as any}
       className={cn(
-        visible ? "animate-enter" : "opacity-0 translate-y-2",
-        "transition-all duration-300 will-change-transform will-change-opacity",
+        visible
+          ? "opacity-100 translate-x-0"
+          : comingFromLeft
+            ? "opacity-0 -translate-x-6"
+            : "opacity-0 translate-x-6",
+        "transition-all duration-500 ease-out will-change-transform will-change-opacity",
         className
       )}
     >

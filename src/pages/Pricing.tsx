@@ -11,6 +11,7 @@ const Pricing = () => {
         <nav className="hidden gap-6 md:flex" aria-label="Main navigation">
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/features">Features</a>
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/pricing">Pricing</a>
+          <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/about">About</a>
           <a className="story-link text-sm text-muted-foreground hover:text-foreground" href="/#contact">Contact</a>
         </nav>
         <div className="flex items-center gap-3">
